@@ -1,0 +1,81 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Head Head"
+      "Info Info"
+      "Info2 Info3"
+      "IMG IMG"
+      "Info4 Info4"
+      "Info5 Info5"
+      "Foot Foot";
+  }
+  
+  .Head {
+    grid-area: Head;
+    background-image: url("./img/head.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    text-align: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+  
+  .Info { grid-area: Info; }
+  
+  .Info2 { grid-area: Info2; }
+  
+  .Info3 { grid-area: Info3; }
+  
+  .IMG { grid-area: IMG; }
+  
+  .Info4 { grid-area: Info4; }
+  
+  .Info5 { grid-area: Info5; }
+  
+  .Foot { grid-area: Foot; }
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+    
+.Head-Text{
+    margin-top: 120px;
+    color: white;
+}
+
+.welcome{
+    font-size: 50px;
+}
+
+.info{
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.button{
+    
+    margin-top: 50px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid gray;
+    vertical-align: middle;
+    padding: 16px 32px;
+    
+}
+
+.button:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
